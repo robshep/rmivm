@@ -41,7 +41,7 @@ public class RmivmTest2 {
 		server.registerObject(TestInterface.class, testInterfaceImpl);
 		
 		
-		RMIVMClient client = new RMIVMClient();
+		Client client = new Client();
 		
 		TestInterface proxy = client.getProxy(TestInterface.class);
 		

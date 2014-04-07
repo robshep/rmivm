@@ -16,14 +16,14 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
 
-public class RMIVMClient 
+public class Client 
 {
 	private Connection connection;
 	private Channel channel;
 	private String replyQueueName;
 	private QueueingConsumer consumer;
 
-	public RMIVMClient() throws IOException
+	public Client() throws IOException
 	{
 		ConnectionFactory factory = new ConnectionFactory();
 	    factory.setHost("localhost");
