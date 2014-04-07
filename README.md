@@ -21,6 +21,7 @@ TODO
 * configuration - request queues, reply queues, connection particulars.
 * common queues with other metadata for discriminating requests
 * Make things robust.
+* Optional checked exception to deal with Remoting specific issues (timeouts/unreachable/unsupported)
 * Asynchronous mode using something like futures.
 * Many more (proper) tests.
 * pluggable serialisation libraries.
@@ -28,6 +29,7 @@ TODO
 * pluggable proxy implementations.
 * Optimisations
     * The server can reply with a token which can be used on subsequent requests from the client to prevent having to serialise all the parameter types etc. 
+
 
 **How.**
 
