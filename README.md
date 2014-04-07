@@ -30,8 +30,8 @@ Why?
 
 Nice to have decoupled consumers and providers in a Service Oriented Architecture. Most RPC/Remoting requires a configured single host as the target. Where there are many consumers and providers, all the wiring must be either hard-coded (statically configured in a config file) or one must employ some sort of service locator (Zookeeper etc) to discover the service endpoints.  load-balancing and fault-tolderance is non-trivial as the client must discover and maintain the state of the each peer.
 
-Using a message queue, means we get load-balance and distributed the services easier.
+Using a message queue, means we can load-balance and distribute the services easier.
 
-Some other systems like to use a particular request/response package. 
+Some other systems like to use a particular request/response package. (Roger)
 
 This approach creates a transparent RMI which is both good (ease of use) and bad (hiding network artefacts).
